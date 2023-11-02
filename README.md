@@ -29,7 +29,7 @@ This project is a Concurrent Server implemented in C that incorporates a Middlew
 
    ```bash
    git clone https://github.com/YourUsername/Concurrent-RPC-Server-with-Middleware.git
-   cd Concurrent-RPC-Server-with-Middleware
+   cd vector_calculator
    ```
    
 2. Compile the server, middleware, and client programs. Ensure you install the necessary dependencies if required.
