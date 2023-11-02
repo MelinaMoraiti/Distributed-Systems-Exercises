@@ -32,9 +32,9 @@ This project is a Concurrent Server implemented in C that incorporates a Middlew
    cd vector_calculator
    ```
    
-2. Compile the server, middleware, and client programs. Ensure you install the necessary dependencies if required.
+2. Compile the server, middleware, and client programs. 
   ```bash
-    make all
+    make 
   ```
 3. Start the server:
 
@@ -58,5 +58,5 @@ Again, replace server_hostname and server_port with the actual hostname and port
 ## RPC Implementation
 - The RPC interface definitions are provided in the .x files.
 - Use rpcgen to generate the server and client stubs.
-- Implement the RPC server functions in the server_app.c file.
-- Incorporate the RPC client functions into the client_app.c file.
+- Implement the RPC server functions in the vector_calc_server.c file.
+- Incorporate the RPC client functions into the vector_calc_client.c file.
