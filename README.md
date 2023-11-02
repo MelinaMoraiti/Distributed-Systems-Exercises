@@ -5,8 +5,8 @@
 This project is a Concurrent Server implemented in C that incorporates a Middleware component to manage user interactions and facilitate communication between clients and the server. The server offers multiple computational tasks using Remote Procedure Calls (RPC) and serves multiple clients. The architecture includes the following key components:
 
 - **Server:** The server hosts the procedures implemented for various calculations.
-- **Middleware:** The middleware handles user input, processes requests, and manages the flow of data between clients and the server.
-- **TCP Client:** The client program provides a user-friendly menu for clients to select a calculation, input data, and display results.
+- **Middleware:** The middleware handles user input, processes requests, and manages the flow of data between clients and the server. **It is the RPC client program that acts as a middleware.**
+- **TCP Client:** The client program provides a menu for clients to select a calculation, input data, and display results.
 
 ## Features
 
@@ -55,3 +55,8 @@ Replace server_hostname and server_port with the actual hostname and port number
     ./tcp_client <server_hostname> <server_port>
   ```
 Again, replace server_hostname and server_port with the actual hostname and port number of the server.
+## RPC Implementation
+- The RPC interface definitions are provided in the .x files.
+- Use rpcgen to generate the server and client stubs.
+- Implement the RPC server functions in the server_app.c file.
+- Incorporate the RPC client functions into the client_app.c file.
