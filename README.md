@@ -50,7 +50,6 @@ Replace server_hostname and server_port with the actual hostname and port number
 
 5. Start one or more clients in separate terminal windows, specifying the server's hostname and port number:
 
-  bash
   ```bash
     ./tcp_client <server_hostname> <server_port>
   ```
