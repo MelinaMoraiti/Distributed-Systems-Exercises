@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a Concurrent Server implemented in C that incorporates a Middleware component to manage user interactions and facilitate communication between clients and the server. The server offers multiple computational tasks using Remote Procedure Calls (RPC) and serves multiple clients. The architecture includes the following key components:
+This project is a Concurrent **RPC Server** implemented in C, a **Middleware component (RPC Client)** to manage user interactions and facilitate communication between clients and the server and a **TCP Client** implemented with C Sockets. The server offers 3 computational tasks with vectors using Remote Procedure Calls (RPC) and serves multiple clients. The architecture includes the following key components:
 
 - **Server:** The server hosts the procedures implemented for various calculations.
 - **Middleware:** The middleware handles user input, processes requests, and manages the flow of data between clients and the server. **It is the RPC client program that acts as a middleware.**
