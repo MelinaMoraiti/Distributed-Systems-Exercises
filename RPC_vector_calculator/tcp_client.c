@@ -94,13 +94,13 @@ void Menu(Request* request,int sockfd)
     char *buffer;
 	do
 	{
-        printf ("            Μενού Επιλογών\n");
-	    printf ("1. Το εσωτερικό γινόμενο των δύο διανυσμάτων Χ ∙ Υ\n");
-        printf ("2. Τη μέση τιμή κάθε διανύσματος: ΕΧ, ΕΥ\n");
-        printf ("3. Το γινόμενο r*(Χ+Y)\n");
-	    printf("4. Έξοδος\n");
-	    printf ("\nΕισάγετε μια επιλογή (1,2,3,4): ");
-        scanf("%d",&request->option);  
+           printf("           Options Menu\n");
+	   printf("1. The inner product of the two vectors X ∙ Y\n");
+	   printf("2. The average value of each vector: EX, EY\n");
+	   printf("3. The product r*(X+Y)\n");
+	   printf("4. Exit\n");
+   	   printf("\nEnter a choice (1, 2, 3, 4): ");
+           scanf("%d",&request->option);  
 	    switch(request->option)
 	    {
 		    case 1:
@@ -142,10 +142,10 @@ void Menu(Request* request,int sockfd)
                 free(resultArray); 
 	        break;
 		    case 4:
-		        printf("Αντίο\n"); 
+		        printf("Goodbye\n"); 
 		    break;	
 		    default:
-                printf("Μη έγκυρη επιλογή\n"); 
+                printf("Invalid Choice\n"); 
 		    break;
 	    }
   } while (request->option != 4);
