@@ -19,12 +19,6 @@ Please ensure the server is running before starting the client application to in
 - `java THClient guests <hostname>`: Displays a list of customers and their reservations for a given hostname.
 - `java THClient cancel <hostname> <type> <number> <name>`: Cancels <number> seats of type <type> reserved by user <name>.
 
-## System Enhancements
-
-The system additionally supports:
-- Subscriptions for notifications on failed booking attempts for specific seat types.
-- Immediate notifications upon seat cancellation to subscribed clients who have registered for updates regarding the specific seat type.
-
 ## Seat Types Available
 - Zone A: 100 seats, 45 EUR each
 - Zone B: 200 seats, 35 EUR each
