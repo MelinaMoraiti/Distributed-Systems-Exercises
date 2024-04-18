@@ -28,7 +28,7 @@ This project is a Concurrent **RPC Server** implemented in C, a **Middleware com
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/YourUsername/Concurrent-RPC-Server-with-Middleware.git
+   git clone https://github.com/MelinaMoraiti/Distributed-Systems-Exercises.git
    cd RPC_vector_calculator
    ```
    
