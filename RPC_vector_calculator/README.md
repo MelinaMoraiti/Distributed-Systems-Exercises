@@ -31,24 +31,29 @@ This project is a Concurrent **RPC Server** implemented in C, a **Middleware com
    git clone https://github.com/MelinaMoraiti/Distributed-Systems-Exercises.git
    cd RPC_vector_calculator
    ```
-   
-2. Compile the server, middleware, and client programs. 
+
+2.  Install the rpcbind package, start the rpcbind service (Debian-based Linux distributions)
+   ```bash
+   sudo apt-get install rpcbind
+   sudo rpcbind
+   ```
+3. Compile the server, middleware, and client programs. 
   ```bash
     make 
   ```
-3. Start the server:
+4. Start the server:
 
   ```bash
    ./vector_calc_server
   ```
-4. Start the middleware component, specifying the server's hostname and port number:
+5. Start the middleware component, specifying the server's hostname and port number:
 
   ```bash
     ./vector_calc_client <server_hostname> <server_port>
   ```
 Replace server_hostname and server_port with the actual hostname and port number of the server.
 
-5. Start one or more clients in separate terminal windows, specifying the server's hostname and port number:
+6. Start one or more clients in separate terminal windows, specifying the server's hostname and port number:
 
   ```bash
     ./tcp_client <server_hostname> <server_port>
